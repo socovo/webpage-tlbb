@@ -1,0 +1,87 @@
+/* -------- info-right -------- */
+.info-right {
+    position: relative;
+    width: 386px;
+    height: 612px;
+    margin-right: 25px;
+    /* background-color: rgba(0,0,0,.5); */
+}
+/* 右侧区域标题 */
+.info-right-title {
+    box-sizing: border-box;
+    width: 386px;
+    height: 55px;
+    border-bottom: 3px solid #f0c0d0;
+}
+/* 切换标签 */
+.info-right-content li label {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 106px;
+    height: 53px;
+    line-height: 52px;
+    text-align: center;
+}
+.info-right-content li input:checked + label {
+    background-color: #f0c0d0;
+    transition: background-color .2s;
+}
+/* 切换标签定位 */
+.info-right-content li:nth-child(3) label {
+    right: 0;
+}
+.info-right-content li:nth-child(2) label {
+    right: 140px;
+}
+.info-right-content li:nth-child(1) label {
+    right: 280px;
+}
+/* 单选按钮定位 */
+.info-right-content li input {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 8px;
+    height: 8px;
+}
+.info-right-content li:nth-child(1) input {
+    left: 5px;
+}
+.info-right-content li:nth-child(2) input {
+    left: 20px;
+}
+.info-right-content li:nth-child(3) input {
+    left: 35px;
+}
+
+.pictures-show {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    width: 386px;
+    height: 557px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.pictures-show li {
+    position: relative;
+    width: 386px;
+    height: 164px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.pictures-show li img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.info-right-content input:checked + label + .pictures-show {
+    opacity: 1;
+}

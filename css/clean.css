@@ -1,0 +1,29 @@
+/* clean */
+body, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+/* 标题 */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+/* 表单 */
+form, p {
+    margin: 0;
+}
+/* input 类 */
+input[type='submit'] {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+input[type='radio'] {
+    margin: 0;
+}

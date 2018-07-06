@@ -1,0 +1,13 @@
+/* main */
+body {
+    min-width: 1200px;
+    height: 2273px;
+    background-color: white;
+    background-image: url('../images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+.width-set {
+    height: 100%;
+}

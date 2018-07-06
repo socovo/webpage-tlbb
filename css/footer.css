@@ -1,0 +1,134 @@
+/* footer */
+.health-game {
+    display: block;
+    width: 100%;
+    height: 188px;
+    margin-top: -320px;
+    background: linear-gradient(transparent, #f0e1e6);
+}
+.health-game-title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 1200px;
+    height: 18px;
+    margin: 0 auto 12px;
+    padding-top: 45px;
+}
+.health-left-line {
+    width: 75px;
+    height: 2px;
+    margin-top: 8px;
+    margin-right: 5px;
+    background-image: linear-gradient(90deg, transparent, black);
+}
+.health-right-line {
+    width: 75px;
+    height: 2px;
+    margin-top: 8px;
+    margin-left: 5px;
+    background-image: linear-gradient(270deg, transparent, black);
+}
+.health-left-diamond, .health-right-diamond {
+    width: 8px;
+    height: 8px;
+    margin-top: 5px;
+    background-color: #eebccc;
+    transform: rotate(45deg);
+}
+.health-text {
+    padding: 0 10px;
+    line-height: 18px;
+}
+.health-game-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 745px;
+    height: 13px;
+    margin: 14px auto 8px;
+    color: #666666;
+    font-size: .75rem;
+    line-height: 13px; 
+}
+.user-18th {
+    display: flex;
+    justify-content: center;
+    height: 12px;
+    margin: 0 auto;
+}
+.user-18th > span {
+    color: #666666;
+    font-size: .75rem;
+    line-height: 12px;
+}
+
+.foot {
+    display: block;
+    width: 100%;
+    height: 132px;
+    margin-top: 0px;
+    background-color: #f0f0f0;
+}
+.foot-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 130px;
+    margin: 0 auto;
+}
+.foot-content-changyou {
+    box-sizing: border-box;
+    width: 175px;
+    height: 77px;
+    padding: 12px 5px 0;
+}
+.foot-content-changyou > a:nth-child(1) {
+    display: inline-block;
+    width: 108px;
+    height: 52px;
+    background-image: url('../images/changyou.png');
+}
+.foot-content-changyou > a:nth-child(2) {
+    display: inline-block;
+    width: 50px;
+    height: 52px;
+    background-image: url('../images/ccm.png');
+}
+.foot-content-center {
+    box-sizing: border-box;
+    height: 77px;
+    padding: 0 10px 0;
+}
+.foot-content-center > p {
+    font-size: .75rem;
+    line-height: 22px;
+}
+.foot-content-center > p > a:visited {
+    color: black;
+}
+.foot-content-center > p:nth-child(3) > a::before {
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/ba.png');
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+.foot-content-police > a {
+    display: block;
+    width: 42px;
+    height: 77px;
+    background-image: url('../images/police.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.color-grey {
+    color: #999999;
+}

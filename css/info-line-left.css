@@ -1,0 +1,139 @@
+/* -------- info-left -------- */
+.info-left {
+    position: relative;
+    width: 678px;
+    height: 612px;
+    margin-left: 25px;
+    /* background-color: rgba(0,0,0,.5); */
+}
+/* 左侧区域标题 */
+.info-left-title {
+    box-sizing: border-box;
+    width: 678px;
+    height: 55px;
+    border-bottom: 3px solid #f0c0d0;
+    font-size: 1.6rem;
+    line-height: 52px;
+}
+/* 切换标签 */
+.info-left-content li label {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 107px;
+    height: 53px;
+    line-height: 52px;
+    text-align: center;
+}
+.info-left-content li input:checked + label {
+    background-color: #f0c0d0;
+    transition: background-color .2s;
+}
+/* 切换标签定位 */
+.info-left-content li:nth-child(4) label {
+    right: 0;
+}
+.info-left-content li:nth-child(3) label {
+    right: 143px;
+}
+.info-left-content li:nth-child(2) label {
+    right: 286px;
+}
+.info-left-content li:nth-child(1) label {
+    right: 429px;
+}
+/* 单选按钮定位 */
+.info-left-content li input {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 8px;
+    height: 8px;
+}
+.info-left-content li:nth-child(1) input {
+    left: 5px;
+}
+.info-left-content li:nth-child(2) input {
+    left: 20px;
+}
+.info-left-content li:nth-child(3) input {
+    left: 35px;
+}
+.info-left-content li:nth-child(4) input {
+    left: 50px;
+}
+
+.announcement-head {
+    position: absolute;
+    top: 79px;
+    width: 678px;
+    height: 123px;
+    /* background-color: rgba(0,0,0,.5); */
+}
+.announcement-list {
+    position: absolute;
+    bottom: 0;
+    width: 678px;
+    height: 392px;
+    /* background-color: rgba(0,0,0,.5); */
+}
+.announcement-list > li {
+    height: 32px;
+    margin-bottom: 17px;
+}
+.announcement-list > li > span,
+.announcement-list > li > a {
+    line-height: 32px;
+}
+.announcement-list > li > a:visited {
+    color: black;
+}
+.announcement-list > li > span:nth-child(1) {
+    display: inline-block;
+    width: 64px;
+    height: 32px;
+    background-color: #ccc6c8;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.announcement-list > li > a:nth-child(2) {
+    margin-left: 30px;
+}
+.announcement-list > li > span:nth-child(3) {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    margin-right: 25px;
+}
+/* 内容区未选中默认不显示 */
+.announcement-head, .announcement-list {
+    display: none;
+}
+/* 内容区选中显示 */
+.info-left-content li input:checked + label + .announcement-head,
+.info-left-content li input:checked + label + .announcement-head + .announcement-list {
+    display: block;
+}
+.announcement-head div:nth-child(1) {
+    display: inline-block;
+    width: 199px;
+    height: 123px;
+    background-image: url('../images/lottery.png');
+    background-size: cover;
+}
+.announcement-head div:nth-child(2) {
+    box-sizing: border-box;
+    float: right;
+    width: 466px;
+    height: 123px;
+    padding: 0 25px;
+    /* background-color: rgba(0,0,0,.5); */
+}
+.announcement-head div:nth-child(2) p:nth-child(1) {
+    font-size: 1.5rem;
+    line-height: 24px;
+    margin-bottom: 14px;
+}
+.announcement-head div:nth-child(2) p:nth-child(2) {
+    font-size: .9rem;
+}

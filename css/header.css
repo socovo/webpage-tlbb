@@ -1,0 +1,21 @@
+/* header */
+header {
+    box-sizing: border-box;
+    width: 1200px;
+    height: 120px;
+    margin: 0 auto;
+    /* background-color: rgba(0,0,0,.2); */
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+}
+.header-menu-list {
+    margin-left: 215px;
+    color: #550254;
+    font-size: 1.125rem;
+    font-family: 'Microsoft Yahei UI', '微软雅黑';
+}
+.header-menu-list li {
+    display: inline-block;
+    padding-left: 50px;
+    line-height: 120px;
+}

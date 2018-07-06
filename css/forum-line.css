@@ -1,0 +1,276 @@
+.forum-line-list {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin-top: 25px;
+    background-image: url('../images/forum-bg.png');
+    /* background-color: rgba(0,0,0,.2); */
+}
+.forum-line-list > li{
+    height: 320px;
+    /* background-color: rgba(0,0,0,.2); */
+    /* vertical-align: top; flex不用考虑基线问题*/
+}
+.forum-line-list > li:nth-child(1){
+    width: 200px;
+    background-color: #354e76;
+}
+
+.forum-icons-list {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.forum-icons-list > li {
+    width: 90px;
+    height: 75px;
+    /* background-color: rgba(0,0,0,.5); */
+    background-repeat: no-repeat;
+    background-position: center 35%;
+    cursor: pointer;
+}
+.forum-icons-list > li:nth-child(1) {
+    background-image: url('../images/forums/weixin.png');
+}
+.forum-icons-list > li:nth-child(2) {
+    background-image: url('../images/forums/weibo.png');
+}
+.forum-icons-list > li:nth-child(3) {
+    background-image: url('../images/forums/message.png');
+}
+.forum-icons-list > li:nth-child(4) {
+    background-image: url('../images/forums/security.png');
+}
+.forum-icons-list > li:nth-child(5) {
+    background-image: url('../images/forums/phone.png');
+}
+.forum-icons-list > li:nth-child(6) {
+    background-image: url('../images/forums/school.png');
+}
+.forum-icons-list > li:nth-child(7) {
+    background-image: url('../images/forums/server.png');
+}
+.forum-icons-list > li:nth-child(8) {
+    background-image: url('../images/forums/game.png');
+}
+.forum-icons-list > li > span {
+    display: block;
+    margin-top: 50px;
+    color: #cccccc;
+    font-size: .9rem;
+    text-align: center;
+}
+
+/* -------- forums-center -------- */
+.forum-line-list > li:nth-child(2){
+    position: relative;
+    width: 443px;
+}
+/* 区域标题 */
+.forum-center-title {
+    box-sizing: border-box;
+    width: 443px;
+    height: 65px;
+    border-bottom: 3px solid #f0c0d0;
+}
+/* 切换标签 */
+.forum-center-content li label {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 106px;
+    height: 63px;
+    line-height: 62px;
+    text-align: center;
+}
+.forum-center-content li input:checked + label {
+    background-color: #f0c0d0;
+    transition: background-color .2s;
+}
+/* 切换标签定位 */
+.forum-center-content li:nth-child(3) label {
+    right: 0;
+}
+.forum-center-content li:nth-child(2) label {
+    right: 168px;
+}
+.forum-center-content li:nth-child(1) label {
+    left: 0;
+}
+/* 单选按钮定位 */
+.forum-center-content li input {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 8px;
+    height: 8px;
+}
+.forum-center-content li:nth-child(1) input {
+    left: 5px;
+}
+.forum-center-content li:nth-child(2) input {
+    left: 20px;
+}
+.forum-center-content li:nth-child(3) input {
+    left: 35px;
+}
+
+.infomation-show {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    width: 443px;
+    height: 255px;
+    margin-left: 30px;
+    opacity: 0;
+    transition: opacity .2s;
+}
+.infomation-show > li > a:visited {
+    color: black;
+}
+.forum-center-content input:checked + label + .infomation-show {
+    opacity: 1;
+}
+
+/* -------- forums-right -------- */
+.forum-line-list > li:nth-child(3){
+    position: relative;
+    width: 502px;
+    height: 320px;
+}
+/* 区域标题 */
+.forum-right-title {
+    box-sizing: border-box;
+    width: 502px;
+    height: 65px;
+    border-bottom: 3px solid #f0c0d0;
+}
+.forum-right-content > li {
+    position: absolute;
+    bottom: 0;
+    width: 502px;
+    height: 255px;
+}
+.forum-right-content > li > ul {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    height: 112px;
+}
+.forum-right-content > li > ul > li {
+    height: 28px;
+    font-size: .9rem;
+    line-height: 28px;
+}
+.forum-right-content > li > ul > li > span {
+    font-weight: bold;
+}
+/* 切换标签 */
+.forum-right-content > li > label {
+    display: inline-block;
+    position: absolute;
+    top: -65px;
+    width: 40px;
+    height: 63px;
+    line-height: 62px;
+    text-align: center;
+}
+.forum-right-content li input:checked + label {
+    background-color: #f0c0d0;
+    transition: background-color .2s;
+}
+/* 切换标签定位 */
+.forum-right-content li:nth-child(12) label {
+    right: 0;
+}
+.forum-right-content li:nth-child(11) label {
+    right: 42px;
+}
+.forum-right-content li:nth-child(10) label {
+    right: 84px;
+}
+.forum-right-content li:nth-child(9) label {
+    right: 126px;
+}
+.forum-right-content li:nth-child(8) label {
+    right: 168px;
+}
+.forum-right-content li:nth-child(7) label {
+    right: 210px;
+}
+.forum-right-content li:nth-child(6) label {
+    right: 252px;
+}
+.forum-right-content li:nth-child(5) label {
+    right: 294px;
+}
+.forum-right-content li:nth-child(4) label {
+    right: 336px;
+}
+.forum-right-content li:nth-child(3) label {
+    right: 378px;
+}
+.forum-right-content li:nth-child(2) label {
+    right: 420px;
+}
+.forum-right-content li:nth-child(1) label {
+    left: 0;
+}
+/* 单选按钮定位 */
+.forum-right-content li input {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 8px;
+    height: 8px;
+}
+.forum-right-content li:nth-child(1) input {
+    left: 5px;
+}
+.forum-center-content li:nth-child(2) input {
+    left: 20px;
+}
+.forum-center-content li:nth-child(3) input {
+    left: 35px;
+}
+.forum-right-content li:nth-child(4) input {
+    left: 50px;
+}
+.forum-right-content li:nth-child(5) input {
+    left: 65px;
+}
+.forum-right-content li:nth-child(6) input {
+    left: 80px;
+}
+.forum-right-content li:nth-child(7) input {
+    left: 95px;
+}
+.forum-right-content li:nth-child(8) input {
+    left: 110px;
+}
+.forum-right-content li:nth-child(9) input {
+    left: 125px;
+}
+.forum-right-content li:nth-child(10) input {
+    left: 140px;
+}
+.forum-right-content li:nth-child(11) input {
+    left: 155px;
+}
+.forum-right-content li:nth-child(12) input {
+    left: 170px;
+}
+.school-show, .school-show + ul {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.forum-right-content input:checked + label + .school-show,
+.forum-right-content input:checked + label + .school-show + ul {
+    opacity: 1;
+}

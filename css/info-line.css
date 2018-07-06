@@ -1,0 +1,12 @@
+/* -------- info-line -------- */
+.info-line-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 1200px;
+    height: 612px;
+    margin-top: 25px;
+    background-image: url('../images/info-bg.png');
+    background-size: cover;
+}
